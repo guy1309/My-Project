@@ -8,7 +8,7 @@ const Header = () => {
         <div>
                <h1>
            <Link to='/' className='logo'>
-            Clothings store
+           My recipe book
           </Link>
                </h1>
         </div>
@@ -19,15 +19,18 @@ const Header = () => {
                 </li>
             </ul>
             <ul>
+            <li>
+               <Link to ='Add'>Add</Link>
+                 </li>
+            </ul>
+            <ul>
                  <li>
                   <Link to='/signup'>Signup</Link>
                 </li>
             </ul>
             <ul>
-                <li>
-                  <Link to='/cart' className='cart'>
-                    <i class='fas fa-shopping-cart'/>
-                  </Link>
+            <li>
+                  <Link to='/Signin'>Members</Link>
                  </li>
             </ul>
         </div>
