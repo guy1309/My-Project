@@ -20,7 +20,7 @@ const Signin = () => {
 
           <div className='links'>
           <a href=''>Forgot Password</a>
-          <a href=''>Signup</a>
+          <a href='Signup'>Signup</a>
           </div>
           <input type ='submit' value='Login'></input>
         </div>
