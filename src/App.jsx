@@ -6,20 +6,23 @@ import Add from './components/Pages/Add';
 import Signup from './components/Pages/Signup';
 import Signin from './components/Pages/Signin';
 
+
 function App  ()  {
 
   return (
+   
    <div>
     <Router>
       <Header/>
     <Routes>
-     <Route path='/' element={<Home/>}/>
+    <Route path='/' element={<Home/>}/>
      <Route path='signup' element={<Signup/>}/>
      <Route path='Add' element={<Add/>}/>
      <Route path='Signin' element={<Signin/>}/>
      </Routes>
     </Router>
     </div>
+    
   )
 }
 

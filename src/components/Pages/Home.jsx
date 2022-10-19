@@ -1,12 +1,10 @@
-import React from 'react';
-import './Home.css';
+import React from 'react'
 
-export default function Home (porps){
-  return <main className='black-col-2'>
-<h2>Products</h2>
-<div className='row'>
 
-</div>
-  </main>;
-  
+const Home = () => {
+  return (
+    <div>Expanse Tracker </div>
+  )
 }
+
+export default Home

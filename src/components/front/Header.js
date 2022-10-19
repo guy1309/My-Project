@@ -8,7 +8,7 @@ const Header = () => {
         <div>
                <h1>
            <Link to='/' className='logo'>
-           My recipe book
+           My Budget
           </Link>
                </h1>
         </div>
@@ -20,7 +20,7 @@ const Header = () => {
             </ul>
             <ul>
             <li>
-               <Link to ='Add'>Add</Link>
+               <Link to ='Add'>Todo</Link>
                  </li>
             </ul>
             <ul>
