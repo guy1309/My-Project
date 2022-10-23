@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Nav } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   return (
-     <header className='header'>
+     <nav className='header'>
         <div>
                <h1>
            <Link to='/' className='logo'>
@@ -20,21 +20,27 @@ const Header = () => {
             </ul>
             <ul>
             <li>
-               <Link to ='Add'>Todo</Link>
+               <Link to ='Add'>Tasks</Link>
                  </li>
             </ul>
             <ul>
-                 <li>
+            <li>
+                  <Link to='/About'>About</Link>
+                 </li>
+                 
+            </ul>
+            <ul>
+            <li>
                   <Link to='/signup'>Signup</Link>
                 </li>
             </ul>
             <ul>
             <li>
-                  <Link to='/Signin'>Members</Link>
-                 </li>
+                  <Link to='/Clubs'>Clubs</Link>
+                </li>
             </ul>
         </div>
-    </header>
+    </nav>
 
     )
 };

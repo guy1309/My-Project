@@ -1,0 +1,17 @@
+.body2{
+    background-color: #23242a;
+    min-height: 87vh;
+    background-image:url(img.jpg);
+    }
+    
+    .about{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .about2{
+        color: rgb(255, 255, 255);
+    margin-top: 30px;
+    font-size: 27px;
+    }

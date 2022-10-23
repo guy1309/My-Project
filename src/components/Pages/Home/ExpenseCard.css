@@ -1,0 +1,16 @@
+.containerr{
+ 
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+
+    
+}
+
+.green{
+   color: green;
+}
+
+.red{
+color: red;
+}

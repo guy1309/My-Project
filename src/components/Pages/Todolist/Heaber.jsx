@@ -4,7 +4,7 @@ import React from 'react'
 const Heaber = () => {
   return (
     <div className='heaber'>
-        <h1>Todo-List</h1>
+        <h1>Tasks</h1>
 
     </div>
   )

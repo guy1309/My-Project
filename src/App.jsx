@@ -1,29 +1,33 @@
-import React from 'react';
-import Header from './components/front/Header';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Pages/Home';
-import Add from './components/Pages/Add';
-import Signup from './components/Pages/Signup';
-import Signin from './components/Pages/Signin';
+import React from "react";
+import './App.css'
+import Header from "./components/front/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Pages/Home/Home";
+import Add from "./components/Pages/Todolist/Add";
+import Signup from "./components/Pages/Signup/Signup";
+import About from "./components/Pages/About/About";
+import Contact from "./components/Pages/Signup/Contact";
+import Footer from "./components/front/Footer";
+import Clubs from "./components/Pages/Clubs/Clubs";
 
 
-function App  ()  {
-
+function App() {
   return (
-   
-   <div>
-    <Router>
-      <Header/>
-    <Routes>
-    <Route path='/' element={<Home/>}/>
-     <Route path='signup' element={<Signup/>}/>
-     <Route path='Add' element={<Add/>}/>
-     <Route path='Signin' element={<Signin/>}/>
-     </Routes>
-    </Router>
-    </div>
     
-  )
+      
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="Add" element={<Add />} />
+          <Route path="About" element={<About />} />
+          <Route path="Contact" element={<Contact />} />
+          <Route path="Clubs" element={<Clubs />} />
+        </Routes>
+        <Footer />
+      </Router>
+  );
 }
 
-export default App
+export default App;

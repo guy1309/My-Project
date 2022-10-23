@@ -26,8 +26,8 @@ const Signup = () => {
 
           
           <div className='links1'>
-          <a href='http://localhost:3000/'>more about us</a>
-          <a href='http://localhost:3000/'>contact us</a>
+          <a href='About'>more about us</a>
+          <a href='Contact'>contact us</a>
           </div>
           <input type ='submitt' value='signup'></input>
         </div>
