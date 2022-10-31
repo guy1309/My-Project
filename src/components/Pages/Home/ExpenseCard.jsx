@@ -20,7 +20,7 @@ const ExpenseCard = ({transactions}) => {
       <Card>
 <CardContent className='income'>
     <Typography >Income</Typography>
-    <Typography className='green' >${income}</Typography>
+    <Typography className='green' >₪{income}</Typography>
 </CardContent>
   </Card>
 
@@ -28,7 +28,7 @@ const ExpenseCard = ({transactions}) => {
   <Card>
 <CardContent className='expense'>
     <Typography >Expense</Typography>
-    <Typography className='red'>${expense}</Typography>
+    <Typography className='red'>₪{expense}</Typography>
 </CardContent>
   </Card>
 

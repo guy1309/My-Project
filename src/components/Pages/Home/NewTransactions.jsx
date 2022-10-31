@@ -34,6 +34,7 @@ const NewTransactions = ({setTransactions}) => {
 
     <TextField
     label='Enter Expense' 
+    type= 'number'
     onChange ={(e) => setAmount(e.target.value)}
     />
     

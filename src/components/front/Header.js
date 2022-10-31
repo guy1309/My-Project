@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Nav } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -34,12 +34,7 @@ const Header = () => {
                   <Link to='/signup'>Signup</Link>
                 </li>
             </ul>
-            <ul>
-            <li>
-                  <Link to='/Clubs'>Clubs</Link>
-                </li>
-            </ul>
-        </div>
+            </div>
     </nav>
 
     )
