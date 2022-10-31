@@ -38,10 +38,10 @@ myBudget@gmail.com
 
 <section className='footer-info-right'>
 <section className='footer-info_number'>
-@2022
+ 09-2067356
 </section>
 <section className='footer-info_contact'>
-09-5762441
+@2022
 <br />
 Contact us
     </section>

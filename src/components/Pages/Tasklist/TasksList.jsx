@@ -1,12 +1,12 @@
 import React from 'react'
 
 
-const TodosList = ({ todos, setTodos, setEditTodo }) => {
+const TasksList = ({ tasks, setTasks, setEditTask }) => {
 
-    const handleComplete = (todo) =>{
-        setTodos(
-            todos.map((item) =>{
-                if(item.id === todo.id){
+    const handleComplete = (task) =>{
+        setTasks(
+            tasks.map((item) =>{
+                if(item.id === task.id){
                     return {...item, completed: !item.completed}
                 }
                 return item;
@@ -14,41 +14,44 @@ const TodosList = ({ todos, setTodos, setEditTodo }) => {
         );
     };
 const handleEdit = ({id}) =>{
-    const findTodo = todos.find((todo) => todo.id === id);
-    setEditTodo(findTodo);
+    const findTask = tasks.find((task) => task.id === id);
+    setEditTask(findTask);
 }
 
     const handleDelete = ({ id }) => {
-        setTodos(todos.filter((todo) => todo.id !== id));
+        setTasks(tasks.filter((task) => task.id !== id));
     }
   return (
     <div>
-        {todos.map((todo) =>(
-            <li className='list-item' key={todo.id}>
+        {tasks.map((task) =>(
+            <li className='list-item' key={task.id}>
             <input
              type='text' 
-             value={todo.title} 
+             value={task.title} 
              className='list'
              onChange={(event) => event.preventDefault()} 
              />
              <div>
+
                 <button className='button-complete task-button' 
-                onClick={() => handleComplete(todo)}>
-                 <i className='fa fa-check-circle'></i>
+                onClick={() => handleComplete(task)}>
+                 <i className='fa fa-check'></i>
                 </button>
-                <button className='button-edit task-button' onClick={() => handleEdit(todo)}>
+
+                <button className='button-edit task-button' onClick={() => handleEdit(task)}>
                  <i className='fa fa-edit'></i>
                 </button>
+
                 <button className='button-delete task-button'
-                 onClick={()=> handleDelete(todo)}>
+                 onClick={()=> handleDelete(task)}>
                  <i className='fa fa-trash'></i>
                 </button>
              </div>
             </li>
         )
-         )};
+         )}
     </div>
   )
 }
 
-export default TodosList
+export default TasksList

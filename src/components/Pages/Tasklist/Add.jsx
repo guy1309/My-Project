@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Heaber from "./Heaber";
 import Form from "./Form";
-import TodosList from "./TodosList";
+import TasksList from "./TasksList";
 import "./Add.css";
 
 const Add = () => {
   const [input, setInput] = useState("");
-  const [todos, setTodos] = useState([]);
-  const [editTodo, setEditTodo] = useState(null);
+  const [tasks, setTasks] = useState([]);
+  const [editTask, setEditTask] = useState(null);
 
   return (
     <div className="container">
@@ -19,17 +19,17 @@ const Add = () => {
           <Form
             input={input}
             setInput={setInput}
-            todos={todos}
-            setTodos={setTodos}
-            editTodo={editTodo}
-            setEditTodo={setEditTodo}
+            tasks={tasks}
+            setTasks={setTasks}
+            editTask={editTask}
+            setEditTask={setEditTask}
           />
         </div>
         <div>
-          <TodosList
-            todos={todos}
-            setTodos={setTodos}
-            setEditTodo={setEditTodo}
+          <TasksList
+            tasks={tasks}
+            setTasks={setTasks}
+            setEditTask={setEditTask}
           />
         </div>
       </div>

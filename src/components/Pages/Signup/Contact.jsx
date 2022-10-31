@@ -9,7 +9,7 @@ const Contact = () => {
         <h2>Contact us</h2>
         
         <div className='inputBox'>
-          <h3>phone number: 09-5762441</h3>
+          <h3>phone number: 09-2067356</h3>
         <i></i>
         </div>
         <div className='inputBox'>
