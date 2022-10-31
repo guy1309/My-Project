@@ -1,7 +1,7 @@
-import { colors, ListItem, ListItemIcon, ListItemText, styled } from '@mui/material';
+import { ListItem, ListItemIcon, ListItemText, styled } from '@mui/material';
 import React from 'react';
 import './NewTransactions.css'
-import DeleteIcon from '@mui/icons-material/Delete'; 
+import DeleteIcon from '@mui/icons-material/Delete';
 
 
 const Detail = styled (ListItem)`

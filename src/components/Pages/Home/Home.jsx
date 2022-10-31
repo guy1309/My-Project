@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Home.css";
 import HomeBalance from "./HomeBalance";
 import ExpenseCard from "./ExpenseCard";
